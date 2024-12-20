@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+:root {
+  --main-bg1: #5bc8af;
+  --main-bg2: #297c6b;
+  --main-bg3: #297c6b;
+  --main-bg4: #333;
+  --main-bg5: #eaeaea;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
