@@ -438,6 +438,10 @@ body {
   justify-content: space-between;
 }
 
+.page3-leftarrow,
+.page3-rightarrow {
+  cursor: pointer;
+}
 .page3-section-box {
   margin-top: 50px;
   width: 100%;
@@ -445,23 +449,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: yellow;
 }
 
-.page3-leftarrow,
-.page3-rightarrow {
-  cursor: pointer;
+.image-crusal {
+  width: 944px;
+  height: 269px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  gap: 20px;
 }
 
 .page3-section-box-content {
-  background-color: green;
-  margin-bottom: 70px;
   width: 944px;
   height: 269px;
+  margin-bottom: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 36px;
+  transition: 0.5s;
 }
 
 .page3-section-box-content img {
@@ -516,10 +523,10 @@ body {
 }
 
 .page3-bullet-box:nth-child(2) {
-  background-color: rgba(91, 200, 175, 1);
+  background-color: rgba(234, 234, 234, 1);
 }
 .page3-bullet-box:nth-child(3) {
-  background-color: rgba(91, 200, 175, 1);
+  background-color: rgba(234, 234, 234, 1);
 }
 
 .page3-section2 {
@@ -1031,6 +1038,15 @@ body {
     width: 100%;
     max-height: 198px;
     padding: 15px;
+  }
+
+  .image-crusal {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .page3-contentt-box {
+    width: 500px;
   }
 
   .page3-section-box-content {
