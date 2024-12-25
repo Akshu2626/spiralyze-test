@@ -190,3 +190,24 @@ pageLeftimg.addEventListener('click', () => {
 })
 
 
+const hamburger = document.querySelector('.nav-hamburger');
+let menuList = document.getElementById("menuList")
+menuList.style.maxHeight = "0px";
+let mark = false;
+
+function toggleBtn() {
+
+
+    if (mark == false || menuList.style.maxHeight == "0px") {
+        menuList.style.maxHeight = "300px";
+        hamburger.innerHTML = `<img src="/assets/x.svg" class="hamburger-img" alt="">`
+        mark = true
+    } else {
+        menuList.style.maxHeight = "0px";
+        hamburger.innerHTML = `<img src="/assets/hamburger.svg" class="hamburger-img" alt="">`
+        mark = false
+    }
+
+}
+
+
