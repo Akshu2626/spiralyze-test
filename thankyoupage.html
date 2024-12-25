@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: gilroy;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #main {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 2rem;
+        }
+
+        .thankyou-box {
+            width: 900px;
+            height: max-content;
+            border: .2px solid black;
+            box-shadow: 0 0 50px -1px gray;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            padding: 60px 50px;
+            gap: 20px;
+        }
+
+        .thankyou-box h1 {
+            text-align: center;
+            font-size: 60px;
+            font-weight: 300;
+            color: #194D44;
+            
+        }
+
+        .thankyou-box p{
+            width: 80%;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        @media (max-width:768px) {
+            .thankyou-box h1{
+                font-size: 30px;
+            }
+            .thankyou-box p{
+                font-size: 20px;
+            }
+        }
+        @media (max-width:380px) {
+            .thankyou-box h1{
+                font-size: 20px;
+            }
+            .thankyou-box p{
+                font-size: 16px;
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="thankyou-box">
+            <h1>Thanks for being awesome!</h1>
+            <p>
+                We have received your message and would like to thank you for writing to us. If your inquiry is urgent.
+                please use the telephone number listed below to talk to one of our staff members. Otherwise, we will
+                reply by email as soon as possible
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
