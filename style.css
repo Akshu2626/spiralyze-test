@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Montserrat;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;  
 }
 
 :root {
@@ -1411,7 +1411,7 @@ body {
   .menuList {
     display: block;
     transition: all 0.5s;
-    background-color: #1a4d42;
+    background-color: #1A4D42;
   }
 
   ul li {
@@ -1429,12 +1429,12 @@ body {
     color: #fff;
   }
 
-  ul li a:hover {
+  ul li a:hover{
     text-decoration: underline;
     font-weight: 700;
   }
 
-  .menulist-call span {
+  .menulist-call span{
     color: var(--main-bg1);
   }
 
@@ -1449,6 +1449,10 @@ body {
     gap: 0;
     overflow: hidden;
   }
+
+
+
+
 
   .page1-center-left .page1-center-medium {
     margin-top: -6rem;
@@ -1565,11 +1569,10 @@ body {
     height: max-content;
   }
 
+ 
+  
   .page3-section-box-content {
     padding: 0px 5px;
-  }
-
-  .page3-section-box-content {
     flex-direction: column;
     justify-content: start;
     align-items: start;
@@ -1577,14 +1580,28 @@ body {
     height: 100%;
   }
 
+
+  .img-con{
+    width: 300px;
+    height: 100%;
+  }
+  .img-con img{
+    width: 100px;
+    height: 100px;
+  }
+
+  .page3-section-box-content img{
+    width: 165px;
+    
+  }
+
+
   .page3-contentt-box p {
     font-size: 14px;
     line-height: 24px;
   }
 
-  .page3-section-box-content img {
-    width: 350px;
-  }
+ 
 
   .page3-content-row img {
     margin-top: -50px;
