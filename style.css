@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Montserrat;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -78,6 +79,10 @@ body {
 
 .nav-btn span {
   color: var(--main-bg1);
+}
+
+.menuList {
+  display: none;
 }
 
 .page1-center {
@@ -304,14 +309,14 @@ body {
   height: 244px;
 }
 
-.image-container>img {
+.image-container > img {
   width: 100%;
   height: 100%;
   border-radius: 8px;
   object-fit: contain;
 }
 
-.second-section>h1 {
+.second-section > h1 {
   width: 344px;
   height: 46px;
   border: 1px;
@@ -321,7 +326,7 @@ body {
   color: #333333;
 }
 
-.second-section>h1>span {
+.second-section > h1 > span {
   font-weight: 900;
   -webkit-text-stroke: 2px solid #333333;
   color: #000;
@@ -344,7 +349,7 @@ body {
   height: max-content;
 }
 
-.paragraph-first-container>p {
+.paragraph-first-container > p {
   width: 371px;
   height: 168px;
   font-size: 14px;
@@ -360,7 +365,7 @@ body {
   height: max-content;
 }
 
-.paragraph-second-container>p {
+.paragraph-second-container > p {
   width: 371px;
   height: 96px;
   font-size: 14px;
@@ -369,7 +374,7 @@ body {
   color: #333333;
 }
 
-.paragraph-second-container>button {
+.paragraph-second-container > button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -409,7 +414,7 @@ body {
   height: 244px;
 }
 
-.image-container>img {
+.image-container > img {
   width: 100%;
   height: 100%;
   border-radius: 8px;
@@ -425,7 +430,7 @@ body {
   color: #333333;
 }
 
-.second-section>h1>span {
+.second-section > h1 > span {
   font-weight: 900;
   -webkit-text-stroke: 2px solid #333333;
   color: #fff;
@@ -448,7 +453,7 @@ body {
   height: max-content;
 }
 
-.paragraph-first-container>p {
+.paragraph-first-container > p {
   width: 371px;
   height: 168px;
   font-size: 14px;
@@ -464,7 +469,7 @@ body {
   height: max-content;
 }
 
-.paragraph-second-container>p {
+.paragraph-second-container > p {
   width: 371px;
   height: 96px;
   font-size: 14px;
@@ -473,7 +478,7 @@ body {
   color: #333333;
 }
 
-.paragraph-second-container>button {
+.paragraph-second-container > button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1151,7 +1156,7 @@ body {
     height: 173.51px;
   }
 
-  .second-section>h1 {
+  .second-section > h1 {
     margin-top: -40px;
   }
 
@@ -1169,7 +1174,7 @@ body {
     gap: 24px;
   }
 
-  .paragraph-first-container>p {
+  .paragraph-first-container > p {
     width: 348px;
     height: 192px;
     font-size: 14px;
@@ -1180,13 +1185,13 @@ body {
     gap: 34px;
   }
 
-  .paragraph-second-container>p {
+  .paragraph-second-container > p {
     font-size: 14px;
     width: 100%;
     height: max-content;
   }
 
-  .paragraph-second-container>button {
+  .paragraph-second-container > button {
     width: 348px;
     height: 52px;
   }
@@ -1206,7 +1211,7 @@ body {
   .page3-section-box-content {
     width: 100%;
     gap: 2px;
-}
+  }
 
   .page3-section-box-content img {
     width: 197px;
@@ -1214,7 +1219,6 @@ body {
   }
 
   .page3-contentt-box {
-    
     width: 100%;
     max-height: 198px;
     padding: 7px;
@@ -1222,7 +1226,7 @@ body {
 
   .image-crusal {
     width: 100%;
-    
+
     justify-content: center;
   }
 
@@ -1404,6 +1408,48 @@ body {
     display: block;
   }
 
+  .menuList {
+    display: block;
+    transition: all 0.5s;
+    background-color: #1a4d42;
+  }
+
+  ul li {
+    list-style-type: none;
+    padding: 20px;
+    padding-top: 0;
+    text-align: start;
+    cursor: pointer;
+  }
+
+  ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  ul li a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+  }
+
+  .menulist-call span {
+    color: var(--main-bg1);
+  }
+
+  ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background: #004274;
+    gap: 0;
+    overflow: hidden;
+  }
+
   .page1-center-left .page1-center-medium {
     margin-top: -6rem;
   }
@@ -1441,7 +1487,7 @@ body {
     display: none;
   }
 
-  .second-section>h1 {
+  .second-section > h1 {
     width: 229px;
     height: 32px;
     font-size: 14px;
@@ -1470,20 +1516,19 @@ body {
     gap: 0px;
   }
 
-  .paragraph-second-container>P {
+  .paragraph-second-container > P {
     font-size: 14px;
     width: 308px;
     height: 140px;
   }
 
-  .paragraph-second-container>button {
+  .paragraph-second-container > button {
     width: 328px;
     height: 52px;
   }
 
   /* page 3 start here */
 
-  
   .page3-section-box {
     height: 100%;
     background-color: rgba(25, 77, 68, 1);
@@ -1492,23 +1537,23 @@ body {
   .page3-contentt-box {
     width: 100%;
     height: 404px;
-}
-.page3-contentt-box {
-  padding: 10px;
-}
+  }
+  .page3-contentt-box {
+    padding: 10px;
+  }
 
-.page3-content-row h2 {
-  font-size: 1rem;
-}
+  .page3-content-row h2 {
+    font-size: 1rem;
+  }
 
-.page3-contentt-box p {
-  font-size: 0.8rem;
-}
+  .page3-contentt-box p {
+    font-size: 0.8rem;
+  }
 
-.page3-section-box-content img {
-  width: 100px;
-  height: 100px;
-}
+  .page3-section-box-content img {
+    width: 100px;
+    height: 100px;
+  }
   .page3-content-row h2 {
     font-size: 18px;
     line-height: 28px;
@@ -1516,8 +1561,8 @@ body {
 
   .image-crusal {
     justify-content: start;
-    height: 404px;
     width: 990px;
+    height: max-content;
   }
 
   .page3-section-box-content {
@@ -1528,7 +1573,7 @@ body {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    
+    width: 350px;
     height: 100%;
   }
 
@@ -1614,7 +1659,7 @@ body {
     margin-top: -11px;
     width: 128px;
     height: 128px;
-}
+  }
 
   .play-btn:hover {
     width: 148px;
@@ -1648,7 +1693,7 @@ body {
     display: none;
   }
 
-  .second-section>h1 {
+  .second-section > h1 {
     width: 229px;
     height: 32px;
     font-size: 14px;
@@ -1677,13 +1722,13 @@ body {
     gap: 0px;
   }
 
-  .paragraph-second-container>P {
+  .paragraph-second-container > P {
     font-size: 14px;
     width: 308px;
     height: 140px;
   }
 
-  .paragraph-second-container>button {
+  .paragraph-second-container > button {
     width: 328px;
     height: 52px;
   }
