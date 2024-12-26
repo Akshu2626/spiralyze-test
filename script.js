@@ -17,6 +17,7 @@ let currentIndex = 0;
 let startX = 0;
 let endX = 0;
 
+
 const updateCarousel = () => {
     const offset = currentIndex * -100;
     slides.forEach(slide => {
