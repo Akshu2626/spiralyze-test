@@ -1222,7 +1222,7 @@ body {
 
   .image-crusal {
     width: 100%;
-    height: 198px;
+    
     justify-content: center;
   }
 
@@ -1491,7 +1491,7 @@ body {
 
   .page3-contentt-box {
     width: 100%;
-    height: 100%;
+    height: 404px;
 }
 .page3-contentt-box {
   padding: 10px;
@@ -1522,6 +1522,19 @@ body {
 
   .page3-section-box-content {
     padding: 0px 5px;
+  }
+
+  .page3-section-box-content {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    
+    height: 100%;
+  }
+
+  .page3-contentt-box p {
+    font-size: 14px;
+    line-height: 24px;
   }
 
   .page3-section-box-content img {
